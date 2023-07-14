@@ -17,14 +17,14 @@ class Config(object):
     API_KEY = ""
     OWNER_ID = ""  # If you dont know, run the bot and do /id in your private chat with it
     OWNER_USERNAME = ""
-    TELETHON_HASH = None  # for purge stuffs
-    TELETHON_ID = None
+    TELETHON_HASH = ""  # for purge stuffs
+    TELETHON_ID = ""
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "sqldbtype://username:pw@hostname:port/db_name"  # needed for any database modules
-    MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
+    MESSAGE_DUMP = ""  # needed to make sure 'save from' messages persist
     LOAD = []
-    NO_LOAD = []
+    NO_LOAD = [android.py, memes.py, webtools.py]
     WEBHOOK = False
     URL = None
 
@@ -40,7 +40,7 @@ class Config(object):
     )  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     WHITELIST_CHATS = []
     BLACKLIST_CHATS = []
-    DONATION_LINK = None  # EG, paypal
+    DONATION_LINK = "https://paypal.me/NickyLrca"  # EG, paypal
     CERT_PATH = None
     PORT = 5000
     DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
@@ -52,7 +52,7 @@ class Config(object):
     )
     CUSTOM_CMD = False  # Set to ('/', '!') or whatever to enable it, like ALLOW_EXCL but with more custom handler!
     API_OPENWEATHER = None  # OpenWeather API
-    SPAMWATCH_API = None  # Your SpamWatch token
+    SPAMWATCH_API = ""  # Your SpamWatch token
     WALL_API = None
 
 
