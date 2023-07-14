@@ -4,6 +4,7 @@ import sys
 import spamwatch
 from telethon import TelegramClient
 import telegram.ext as tg
+from nicky.config.py import Config
 
 # enable logging
 logging.basicConfig(
