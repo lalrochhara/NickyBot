@@ -12,6 +12,7 @@ from telegram.ext import (
 )
 from telegram.ext.dispatcher import DispatcherHandlerStop
 from telegram.utils.helpers import escape_markdown
+from nicky.config.py import Config
 
 from nicky import (
     dispatcher,
