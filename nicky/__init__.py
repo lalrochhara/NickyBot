@@ -28,18 +28,18 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
-    TOKEN = os.environ.get("TOKEN", None)
+    TOKEN = os.environ.get("TOKEN",)
     try:
-        OWNER_ID = int(os.environ.get("OWNER_ID", None))
+        OWNER_ID = int(os.environ.get("OWNER_ID",))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-    MESSAGE_DUMP = os.environ.get("MESSAGE_DUMP", None)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+    MESSAGE_DUMP = os.environ.get("MESSAGE_DUMP",)
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME",)
 
     try:
         SUDO_USERS = set(
-            int(x) for x in os.environ.get("SUDO_USERS", "").split()
+            int(x) for x in os.environ.get("SUDO_USERS","").split()
         )
     except ValueError:
         raise Exception(
@@ -90,7 +90,7 @@ if ENV:
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
-    STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", False))
+    STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
     WORKERS = int(os.environ.get("WORKERS", 8))
     BAN_STICKER = os.environ.get(
         "BAN_STICKER", "CAADAgADOwADPPEcAXkko5EB3YGYAg"
@@ -98,9 +98,9 @@ if ENV:
     CUSTOM_CMD = os.environ.get("CUSTOM_CMD", False)
     API_WEATHER = os.environ.get("API_OPENWEATHER", None)
     WALL_API = os.environ.get("WALL_API", None)
-    TELETHON_ID = int(os.environ.get("TL_APP_ID", None))
-    TELETHON_HASH = os.environ.get("TL_HASH", None)
-    SPAMWATCH = os.environ.get("SPAMWATCH_API", None)
+    TELETHON_ID = int(os.environ.get("TL_APP_ID",))
+    TELETHON_HASH = os.environ.get("TL_HASH",)
+    SPAMWATCH = os.environ.get("SPAMWATCH_API",)
 
 else:
     from nicky.config import Development as Config
