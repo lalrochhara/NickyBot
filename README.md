@@ -1,5 +1,5 @@
 # nicky
-This bot is forked from skylee
+This bot is forked and re-design(made) from skylee
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
@@ -9,7 +9,7 @@ This bot is forked from skylee
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Actively Maintained](https://img.shields.io/badge/Maintenance%20Level-Actively%20Maintained-green.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
 
-![logo](https://telegra.ph/file/eb5bdd47326d1eda8350f.jpg)
+![logo](https://firebasestorage.googleapis.com/v0/b/baby-bawitlung-story.appspot.com/o/Image%20file%2Fbigred_cute_anime_boy_with_black_hair_and_big_blue_by_sketchesbydani_dfndnu7-pre.jpg?alt=media&token=62251716-e187-4fca-ad98-056f34d68981)
 
 
 A modular Telegram Python bot running on python3 with an sqlalchemy database.
